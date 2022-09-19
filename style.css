@@ -338,6 +338,10 @@ a:visited {
   margin: 7px 0px;
 }
 
+.announcement h3 {
+  margin-bottom: 7px;
+}
+
 .trending {
   margin: 0px 15px 0px 30px;
   grid-area: trending;
