@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link
     href="https://fonts.googleapis.com/css?family=Roboto"
     rel="stylesheet"
@@ -16,25 +17,29 @@
     <title>Admin-Dashboard</title>
   </head>
   <body>
-    <div id="content">
       <div id="header">
         <div id="header_top">
         <div id="header_area1">
-          <button type="submit"><i class="fa fa-search"></i></button>
-          <input type="text" placeholder="Search.." name="search" />
+          <button class="search_btn" type="submit"><i class="fa fa-search"></i></button>
+          <input class="search_bar" type="text" placeholder="Search.." name="search" />
         </div>
 
         <div id="header_area2">
-          <img class="profile" src="/img/catmeme.png" alt="#" />
-          <button type="submit"><i class="fa fa-regular fa-bell"></i></button>
-          <p>Burrito Meowise</p>
+          <button type="button" class="notification_btn">
+            <span class="material-icons">notifications</span>
+            <span class="notification_badge">2</span>
+          </button>
+          <img class="profile" src="/img/grumpyCat.png" alt="#" />
+          <p>Grumpy Catz</p>
       </div>
     </div>
     <div id="header_bottom">
         <div id="header_area3">
-          <img class="profile" src="/img/catmeme.png" alt="#" />
-          <p>Hi there,</p>
-          <p>Burrito Meowise (@purrito)</p>
+          <img class="profile" src="/img/grumpyCat.png" alt="#" />
+          <div class="greeting_username">
+            <p>Hi there,</p>
+            <p>Grumpy Catz (@purrito)</p>
+          </div>
         </div>
 
         <div id="header_area4">
@@ -91,8 +96,10 @@
         </li>
       </div>
 
-      <container id="project_container">
-        <div id="card_container">
+  <container class="content">
+    <div class="projects">
+      <h2>Your Projects</h2>
+      <div class="cards">
         <div class="card">
           <h3>Super Cool Project</h3>
           <p>
@@ -136,11 +143,11 @@
           </p>
         </div>
       </div>
-
-
-    <div id="announcement_trending">
-      <h2 id="announcement_title">Announcements</h2>
-      <div id="announcements">
+    </div>
+    
+    <div class="announcements">
+      <h2>Announcements</h2>
+      <div class="announcement_card">
         <div class="announcement">
           <h3>Site Maintenance</h3>
           <p>
@@ -163,35 +170,45 @@
           </p>
         </div>
       </div>
+    </div>
 
-      <h2 id="trending_title">Trending</h2>
-      <div id="trending">
-        <div>
+
+      <div class="trending">
+        <h2>Trending</h2>
+        <div class="trending_card">
+        <div class="trending_profile">
           <img class="cat_profile" src="/img/cat1.jpg" alt="#" />
+        <div class="trending_user">
           <p>@teganan</p>
           <p>World Peace Builder</p>
         </div>
+        </div>
 
-        <div>
+        <div class="trending_profile">
           <img class="cat_profile" src="/img/cat2.jpg" alt="#" />
+          <div  class="trending_user">
           <p>@morgan</p>
           <p>Super Cool Project</p>
         </div>
+        </div>
 
-        <div>
+        <div class="trending_profile">
           <img class="cat_profile" src="/img/cat3.jpg" alt="#" />
+          <div  class="trending_user">
           <p>@kendall</p>
           <p>Life Changing App</p>
         </div>
+        </div>
 
-        <div>
+        <div class="trending_profile">
           <img class="cat_profile" src="/img/cat4.jpg" alt="" />
+          <div  class="trending_user">
           <p>@alex</p>
           <p>No Traffic Maker</p>
         </div>
+        </div>
       </div>
-    </div>
+      </div>
   </container>
-    </div>
   </body>
 </html>
