@@ -9,8 +9,6 @@
   --gray-2: #cccccc;
   --gray-3: #bbbbbb;
   --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-    0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 body {
@@ -287,6 +285,7 @@ a:visited {
   padding: 30px;
   border-radius: 8px;
   box-shadow: var(--shadow);
+  overflow: auto;
 
   display: flex;
   flex-direction: column;
@@ -326,7 +325,7 @@ a:visited {
 }
 
 .announcement_card {
-  font-size: 13px;
+  font-size: 14px;
   background-color: #fff;
   border-radius: 8px;
   margin-top: 15px;
@@ -374,13 +373,13 @@ a:visited {
 }
 
 .trending_user {
-  padding: 10px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
 }
 
 .cat_profile {
-  width: 55px;
-  max-height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
 }
