@@ -1,4 +1,4 @@
-# Project-Admin-Dashboard
+# Simple Project-Admin-Dashboard (Small Project)
 
 ### Built With
 
